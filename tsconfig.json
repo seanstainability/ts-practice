@@ -1,0 +1,75 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+
+    /* Basic Options */
+    // "incremental": true,                         /* Enable incremental compilation */
+    "target": "ES2016",                             /* 어떤 자바스크립트 버전으로 변환할지 설정 : 'ES3', 'ES5'(ES3, ES5는 클래스 문법과의 충돌이 있을 수 있음), 'ES2015'(=ES6), 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', 'ES2021', or 'ESNEXT'. */
+    "module": "es2016",                             /* target에 맞춰 설정하면 된다. 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+    // "lib": [],                                   /* 목록에 있는 d.ts를 추가해준다 */
+    // "allowJs": true,                             /* js를 ts로 점진적으로 업그레이드할 때, js 파일도 컴파일 허용하는 옵션 */
+    // "checkJs": true,                             /* allowJs와 함께 사용, js 파일도 오류 체크 */
+    // "jsx": "preserve",                           /* 'preserve'는 .jsx로 변환되고(.js로의 추가 변환 과정 필요), 'react'는 '.js'로 변환 */
+    // "declaration": true,                         /* d.ts 파일 생성 */
+    // "declarationMap": true,                      /* Generates a sourcemap for each corresponding '.d.ts' file. */
+    // "sourceMap": true,                           /* Generates corresponding '.map' file. */
+    // "outFile": "./",                             /* Concatenate and emit output to single file. */
+    // "outDir": "./",                              /* 결과물인 .js 파일을 다른 폴더에 생성하고 싶을 때 */
+    // "rootDir": "./",                             /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+    // "composite": true,                           /* Enable project compilation */
+    // "tsBuildInfoFile": "./",                     /* Specify file to store incremental compilation information */
+    // "removeComments": true,                      /* Do not emit comments to output. */
+    // "noEmit": true,                              /* Do not emit outputs. */
+    // "importHelpers": true,                       /* Import emit helpers from 'tslib'. */
+    // "downlevelIteration": true,                  /* Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'. */
+    // "isolatedModules": true,                     /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
+
+    /* 엄격한 타입 체크를 위한 옵션들(strict 및 noInplicit으로 시작되는 아이들은 켜두는 것을 권장) */
+    "strict": true,                                 /* Enable all strict type-checking options. */
+    // "noImplicitAny": true,                       /* Raise error on expressions and declarations with an implied 'any' type. */
+    // "strictNullChecks": true,                    /* Enable strict null checks. */
+    // "strictFunctionTypes": true,                 /* Enable strict checking of function types. */
+    // "strictBindCallApply": true,                 /* Enable strict 'bind', 'call', and 'apply' methods on functions. */
+    // "strictPropertyInitialization": true,        /* Enable strict checking of property initialization in classes. */
+    // "noImplicitThis": true,                      /* Raise error on 'this' expressions with an implied 'any' type. */
+    // "alwaysStrict": true,                        /* Parse in strict mode and emit "use strict" for each source file. */
+
+    /* Additional Checks */
+    // "noUnusedLocals": true,                      /* Report errors on unused locals. */
+    // "noUnusedParameters": true,                  /* Report errors on unused parameters. */
+    // "noImplicitReturns": true,                   /* Report error when not all code paths in function return a value. */
+    // "noFallthroughCasesInSwitch": true,          /* Report errors for fallthrough cases in switch statement. */
+    // "noUncheckedIndexedAccess": true,            /* Include 'undefined' in index signature results */
+    // "noImplicitOverride": true,                  /* Ensure overriding members in derived classes are marked with an 'override' modifier. */
+    // "noPropertyAccessFromIndexSignature": true,  /* Require undeclared properties from index signatures to use element accesses. */
+
+    /* Module Resolution Options */
+    // "moduleResolution": "node",                  /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+    // "baseUrl": "./",                             /* 기본 경로 설정 */
+    // "paths": {},                                 /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+    // "rootDirs": [],                              /* List of root folders whose combined content represents the structure of the project at runtime. */
+    // "typeRoots": [],                             /* 내가 만든 d.ts 로딩 시 사용 */
+    // "types": [],                                 /* 내가 만든 d.ts 로딩 시 사용 */
+    // "allowSyntheticDefaultImports": true,        /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
+    "esModuleInterop": true,                        /* import * as React from 'react'에서 '* as'를 생략하기 위한 옵션으로 주로 사용, module 설정이 commonjs일 때 주의해야 할 옵션 */
+    // "preserveSymlinks": true,                    /* Do not resolve the real path of symlinks. */
+    // "allowUmdGlobalAccess": true,                /* Allow accessing UMD globals from modules. */
+
+    /* Source Map Options */
+    // "sourceRoot": "",                            /* Specify the location where debugger should locate TypeScript files instead of source locations. */
+    // "mapRoot": "",                               /* Specify the location where debugger should locate map files instead of generated locations. */
+    // "inlineSourceMap": true,                     /* Emit a single file with source maps instead of having a separate file. */
+    // "inlineSources": true,                       /* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
+
+    /* Experimental Options */
+    // "experimentalDecorators": true,              /* Enables experimental support for ES7 decorators. */
+    // "emitDecoratorMetadata": true,               /* Enables experimental support for emitting type metadata for decorators. */
+
+    /* Advanced Options */
+    "skipLibCheck": true,                           /* Skip type checking of declaration files. */
+    "forceConsistentCasingInFileNames": true        /* Disallow inconsistently-cased references to the same file. */
+  },
+//  "include": [], /* 어떤 파일을 컴파일할지 지정 */
+//  "exclude": [], /* 어떤 파일을 제외하고 컴파일할지 지정 */
+//  "extends": "", /* 타입스크립트 프로젝트마다 설정이 조금씩 다를 때, 공통 설정 파일을 두고 확장해서 사용할 경우 */
+}
