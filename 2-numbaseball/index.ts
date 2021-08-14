@@ -10,7 +10,7 @@
     const getNumbers = () => {
         let choice: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
         let temp: number[] = [];
-        for(let i = 0; i < 4; i++) {
+        for(let i: number = 0; i < 4; i++) {
             let choose: number = choice.splice(Math.floor(Math.random() * (9 - i)), 1)[0];
             temp.push(choose);
         };
@@ -65,7 +65,7 @@
             result.innerText = `남은 횟수: ${count}`;
             let ball = 0;
             let strike = 0;
-            for (let i = 0; i < 4; i++) {
+            for (let i: number = 0; i < 4; i++) {
                 if (userInput[i] === answer[i]) {
                     strike += 1;
                 } else if (userInput.includes((answer[i]))) {
